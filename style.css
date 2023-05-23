@@ -14,7 +14,9 @@ body {
     perspective: 1000px;
 
 }
-
+#cad{
+    cursor: pointer;
+}
 #box {
     position: relative;
     transform: rotateY(0deg);

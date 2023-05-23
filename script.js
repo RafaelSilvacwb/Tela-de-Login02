@@ -5,7 +5,7 @@ function goBack() {
 
 function goFront() {
     document.querySelector("#box")
-        .style.transform = "rotateY(180deg)"
+        .style.transform = "rotateY(0deg)"
 }
 
 
