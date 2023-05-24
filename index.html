@@ -11,6 +11,18 @@
 </head>
 
 <body>
+    <div id="recover">
+        <div class="recover-form">
+            <h1>Redefinir Senha</h1>
+            <p>Informe o e-mail para o qual deseja redefinir a sua senha.</p>
+
+            <input type="email" placeholder="Email" id="recover-input">
+            <div class="recover-button">
+                <button>Redefinir Senha</button>
+                <a href="">Voltar ao Login</a>
+            </div>
+        </div>
+    </div>
     <div id="box">
         <div class="register">
 
@@ -61,7 +73,7 @@
                     <div class="rem-password">
                         <input type="checkbox"><span>Lembrar Senha</span>
                     </div>
-                    <a href="">Esqueceu a Senha?</a>
+                    <a href="" onclick="recovery()">Esqueceu a Senha?</a>
                 </div>
 
 
@@ -85,6 +97,7 @@
         </div>
 
     </div>
+
     <script src="./script.js"></script>
     <div></div>
 </body>

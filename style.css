@@ -10,8 +10,8 @@ body {
     background-image: url(./painted-mountain-landscape-sunset-vector-art-landscape-vector-art-landscape-vector-background-sunset-vector-background.jpg);
     display: flex;
     justify-content: center;
-    align-content: center;
-    perspective: 1000px;
+    align-items: center;
+
 
 }
 
@@ -19,22 +19,67 @@ body {
     cursor: pointer;
 }
 
-#box {
+#recover {
+    margin-top: 100px ;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px black;
+    border-radius: 15px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+
+}
+.recover-form{
+    margin-top: 100px;
+}
+.recover-form p{
+    font-size: 25px;
+    font-weight: normal;
+    margin: 30px 5% 0 5%;
+}
+#recover-input{
+    margin-top: 50px;
+    width: 80%;
+}
+#recover-button{
+    text-transform: uppercase;
+    width: 300px;
+    margin-top: 20px;
+}
+.recover-button button{
+    text-transform: uppercase;
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#box {
+    margin-top: 100px;
+    position: absolute;
     transform: rotateY(0deg);
     transform-style: preserve-3d;
-    transition: transform ease 1s;
-
-    width: 600px;
-    height: 700px;
+    
+    width: 500px;
+    height: 600px;
     border-radius: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .register {
-    padding-top: 80px;
+
     backface-visibility: hidden;
     transform: rotateY(180deg);
     position: absolute;
@@ -97,10 +142,6 @@ body {
     flex-direction: column;
 }
 
-.flip {
-    transform: rotateY(180deg);
-}
-
 
 .email,
 .password {
@@ -111,6 +152,7 @@ body {
 }
 
 input {
+    outline: none;
     border-radius: 5px;
     border-spacing: 20px;
     background-color: #FDDF96;
@@ -130,8 +172,13 @@ input {
 }
 
 .remember {
+    display: grid;
+    align-items: center;
+}
+
+.rem-password {
     display: flex;
-     align-items: center;
+    align-items: center;
 }
 
 
@@ -187,17 +234,19 @@ button:hover {
     }
 
     .remember {
-        
+
         width: 80%;
         display: grid;
         justify-content: center;
     }
-.rem-password{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+    .rem-password {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .remember a {
         margin-top: 20px;
         display: flex;
