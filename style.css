@@ -186,18 +186,32 @@ button:hover {
         width: 70%;
     }
 
-   
-
+    .remember {
+        
+        width: 80%;
+        display: grid;
+        justify-content: center;
+    }
+.rem-password{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
     .remember a {
-        background-color: pink;
+        margin-top: 20px;
         display: flex;
         justify-content: right;
         align-items: center;
         height: 100%;
-        width: 50%;
+        width: 100%;
     }
 
-    
+    .remember .checkbox1 {
+
+        height: 100%;
+
+    }
 
 
 
